@@ -2,18 +2,18 @@
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-if(!empty(getenv("CLEARDB_DATABASE_URL"))){
+//if(!empty(getenv("CLEARDB_DATABASE_URL"))){
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
-}else{
+/*}else{
 $server = "localhost";
 $username = "root";
 $password = "megamisama";
 $db = "sugarcrm";
 
-}
+}*/
 
 
 // created: 2017-03-14 09:20:11
